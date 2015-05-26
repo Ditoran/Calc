@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="calc.jahnke.im.calc" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutDialogActivity"
+            android:label="@string/about"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".IsPrimeActivity"
+            android:label="@string/title_activity_is_prime"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="calc.jahnke.im.calc.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NumeralSystemActivity"
+            android:label="@string/title_activity_numeral_system"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="calc.jahnke.im.calc.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DiophantineActivity"
+            android:label="@string/title_activity_diophantine"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="calc.jahnke.im.calc.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EuklidActivity"
+            android:label="@string/title_activity_euklid"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="calc.jahnke.im.calc.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

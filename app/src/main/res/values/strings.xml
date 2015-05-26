@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">IT Tools</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="textfieldHint">Square of...</string>
+    <string name="calcButton">Calc</string>
+    <string name="resetButton">Reset</string>
+    <string name="aboutButton">About</string>
+    <string name="exit">Exit</string>
+    <string name="about">About</string>
+    <string name="title_activity_is_prime">Is Prime?</string>
+    <string name="checkButton">Check</string>
+    <string name="title_activity_numeral_system">Numeral Systems</string>
+    <string name="input">Input</string>
+    <string name="output">Output</string>
+    <string name="convert">Convert</string>
+    <string name="conversion">Conversion</string>
+    <string name="title_activity_diophantine">DiophantineActivity</string>
+    <string name="title_activity_euklid">EuklidActivity</string>
+    <string name="a">a</string>
+    <string name="b">b</string>
+    <string name="ggt">ggT</string>
+    <string name="kgv">kgV</string>
+</resources>

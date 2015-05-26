@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Is Prime?"
+            android:onClick="onButtonClick"
+            android:id="@+id/buttonPrime"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Numeral system calculator"
+            android:onClick="onButtonClick"
+            android:id="@+id/buttonNumeralSystem"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diophantine equation"
+            android:onClick="onButtonClick"
+            android:id="@+id/buttonDiophantine"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ggT / kgV"
+            android:id="@+id/buttonEuklid"
+            android:nestedScrollingEnabled="false"
+            android:onClick="onButtonClick" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About..."
+            android:onClick="onButtonClick"
+            android:id="@+id/buttonAbout" />
+
+    </LinearLayout>
+</LinearLayout>
