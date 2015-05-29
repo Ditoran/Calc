@@ -2,16 +2,28 @@ package calc.jahnke.im.calc;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import calc.jahnke.im.calc.ModelClasses.EuklidModule;
 
 
 public class EuklidActivity extends ActionBarActivity {
+
+    TextView ggtResult;
+    TextView kgvResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_euklid);
+
+        ggtResult = (TextView)findViewById(R.id.ggtResult);
+        kgvResult = (TextView)findViewById(R.id.kgvResult);
     }
 
     @Override
@@ -34,5 +46,21 @@ public class EuklidActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onButtonClick(View view){
+
+        Log.d("EuklidActivity", "Button clicked");
+
+        int a = Integer.parseInt(((EditText)findViewById(R.id.numberA)).getText().toString());
+        int b = Integer.parseInt(((EditText)findViewById(R.id.numberB)).getText().toString());
+
+        EuklidModule euklid = new EuklidModule(a, b);
+
+        ((TextView)findViewById(R.id.ggtText)).setVisibility(View.VISIBLE);
+        ((TextView)findViewById(R.id.kgvText)).setVisibility(View.VISIBLE);
+
+        ggtResult.setText(""+euklid.getGgt());
+        kgvResult.setText(""+euklid.getKgv());
     }
 }

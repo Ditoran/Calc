@@ -45,7 +45,7 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(new Intent(this, IsPrimeActivity.class));
                 break;
             case R.id.buttonAbout:
-                Log.d("Meldung", "Über...");
+                Log.d("Meldung", "ï¿½Ãœber...");
                 startActivity(new Intent(this, AboutDialogActivity.class));
                 break;
             case R.id.buttonNumeralSystem:
@@ -53,6 +53,9 @@ public class MainActivity extends ActionBarActivity {
                 break;
             case R.id.buttonEuklid:
                 startActivity(new Intent(this, EuklidActivity.class));
+                break;
+            case R.id.buttonDiophantine:
+                startActivity(new Intent(this, DiophantineActivity.class));
                 break;
             default:
                 break;
